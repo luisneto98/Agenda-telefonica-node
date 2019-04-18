@@ -1,0 +1,27 @@
+<% include header.ejs %>
+      <main>
+            
+            <div class="container">
+            <div class="row"> 
+                  <h3 class= "">Contatos</h3>     
+                  
+                  <div  class="col s6">
+                        <input id="search" type="search" placeholder="Pesquisar...">
+                  </div>      
+                  <a id = "atualizar" class="col offset-s5 btn-floating btn-large waves-effect waves-light rigth"><i class="medium material-icons">loop</i></a>
+                  
+            </div>
+                     
+                  <ul id="contatos" class="collapsible">
+                        
+                  </ul>
+                  
+                  <div class="fixed-action-btn">
+                  <a id= 'cadastrar' class="btn-floating btn-large blue modal-trigger" href="#cadastro" >
+                        <i class="large material-icons" style="font-size: 50px">add_circle_outline</i></a>
+                  </div>
+              
+            </div>
+            <% include modals.ejs %>
+      </main>            
+<% include footer.ejs %>
